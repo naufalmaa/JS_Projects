@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Program!</title>
+
+  </head>
+  <body>
+    <h1>JavaScript Objects!</h1>
+
+    <!-- <button onclick="createParagraph()">Click to Create a Paragraph</button> -->
+  <p id="demo"></p>
+
+  <script type="text/javascript">
+
+    const person = {
+      first_name : "John",
+      last_name : "Petrus",
+      pin_code: "432543",
+      email : "petrusjohn@gmail.com"
+    };
+
+
+    document.getElementById("demo").innerHTML = person.first_name + " " + person.last_name + " has email " + person.email + " with pin code of " + person.pin_code;
+  </script>
+
+  </body>
+</html>

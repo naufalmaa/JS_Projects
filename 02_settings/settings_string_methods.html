@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Program!</title>
+
+  </head>
+  <body>
+    <h1>JavaScript String Methods!</h1>
+
+    slice()
+    substring()
+
+    replace()
+    uppcase()
+    lowercase()
+    
+    concat()
+
+    <!-- <button onclick="createParagraph()">Click to Create a Paragraph</button> -->
+  <p id="demo"></p>
+
+  <script type="text/javascript">
+
+  let fruits = "Apple, kiwi, banana, orange"
+  let fruits2 = "eggplant, cherry"  
+  let fruits3 = "mango, melon, watermelon"
+  let merge_fruits = fruits.concat(", ", fruits2, ", ", fruits3);
+
+    document.getElementById("demo").innerHTML = fruits + " <br> after using slice() ->     : " + fruits.slice(5,12) + "<br> after using substring() ->     : " + fruits.substring(5,20) + "<br> after using concat() ->     : " + merge_fruits;
+  </script>
+
+  </body>
+</html>

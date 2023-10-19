@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Program!</title>
+  </head>
+  <body>
+    <h1>JavaScript Conditional Statements!</h1>
+
+    <!-- <button onclick="createParagraph()">Click to Create a Paragraph</button> -->
+    <p id="demo">Good Day</p>
+
+    <script>
+    //   const hour = new Date().getHours();
+    const hour = new Date().getHours()
+
+    let message;
+
+    if (hour > 4 && hour <= 11) {
+      message = "Good Morning!";
+    } else if (hour > 11 && hour <= 18) {
+      message = "Good Afternoon!";
+    } else {
+      message = "Good Evening!";
+    }
+
+      document.getElementById("demo").innerHTML = message;
+    </script>
+  </body>
+</html>
