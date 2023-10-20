@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Program!</title>
+  </head>
+  <body>
+    <h1>JavaScript Control Flow Statements!</h1>
+
+    <!-- <button onclick="createParagraph()">Click to Create a Paragraph</button> -->
+    <p id="demo"></p>
+
+    <script>
+    // //   const hour = new Date().getHours();
+    // let text = "";
+    // const n = 5;
+
+    // for(let i = 1; i<=20; i++){
+    //   text += "The Number is "+ n + " x " + i + " = " + n*i + "<br>";
+    // }
+
+    // // output is the same as cont_while_loop.htm
+    
+    const fruits = ["Apple", "Cherry", "Banana", "Eggplant", "Guava"];
+
+    let len = fruits.length;
+    let text = "";
+
+    for(let i = 0; i<len; i++){
+
+      // if (i == 3){
+      //   break;
+      // }
+      // we can use break statement to break the loop
+
+      if (i == 3){
+        text += "This is a purpose for continue statement <br>";
+        continue;
+      }
+
+      text += "The Fruit is "+ fruits[i] + "<br>";
+    }
+
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
